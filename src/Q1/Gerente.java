@@ -11,13 +11,10 @@ public class Gerente {
 
     public void start(){
         try {
-            // URL do servidor de dados do sensor
             String serverUrl = "https://belmondojr.dev/comunicacao.php?";
 
-            // Dados do sensor
             String[] sensors = {"altura", "temperatura", "pressao", "prosimidade"};
 
-            // Envia os dados do sensor para o servidor
             enviar(serverUrl, sensors);
 
         } catch (Exception e) {
