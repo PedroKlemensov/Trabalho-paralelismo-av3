@@ -1,0 +1,2 @@
+um de sockets tipo TCP onde eu eu paralizaria os sensores para mandar em mais de um sockets por vez, assim eu garantia a velocidade e
+evitaria a perca de dados

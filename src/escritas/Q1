@@ -1,0 +1,7 @@
+o cliente servidor é uma arquitetura de aplicação distribuída O cliente não compartilha nenhum de seus recursos com o servidor, mas
+no entanto ele solicita alguma função do servidor, sendo ele, o cliente, responsável por iniciar a comunicação com o servidor,
+enquanto o mesmo aguarda requisições de entrada. com vamtagem te atender muitos users por ver mas com a tezvantagem ter um limite maximo
+por vez
+
+ja na sockets somete dois so comunicam por vez usando as portas e sua desvatagem ta em seu metodo de comnicaçao onde em tem perca outro tem
+demora na resposta e no emvio
