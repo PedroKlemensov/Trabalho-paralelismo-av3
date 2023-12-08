@@ -62,7 +62,7 @@ public class Gerente {
                 System.out.println("A pressão permaneceu igual.");
             }
 
-            System.out.println("Deseja analisar novamente? (Digite '1' para continuar)");
+            System.out.println("Deseja analisar novamente? (Digite '1' para continuar) qualque outra coisa para nao");
         } while (scanner.nextLine().equalsIgnoreCase("1"));
 
         System.out.println("Programa encerrado.");
@@ -113,7 +113,6 @@ public class Gerente {
         connection.setRequestMethod("GET");
 
         int responseCode = connection.getResponseCode();
-        System.out.println("Response Code: " + responseCode);
 
         try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
             String inputLine;
