@@ -67,13 +67,11 @@ public class Gerente {
             String fullURL = phpURL + "?matrixA=" + encodedMatrixA
                     + "&matrixB=" + encodedMatrixB;
 
-            //cria conexão
             URL url = new URL(fullURL);
             HttpURLConnection connection =
                     (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
-            //ler do servidor
             BufferedReader reader =
                     new BufferedReader(new InputStreamReader
                             (connection.getInputStream()));
@@ -93,9 +91,7 @@ public class Gerente {
                     .replace("]]", "");
             String[] rows = cleanJsonString.split("],");
 
-            // Imprima a matriz
             for (String row : rows) {
-                // Divida cada linha em elementos
                 String[] elements = row.split(",");
                 for (String element : elements) {
                     System.out.print(element + " ");
