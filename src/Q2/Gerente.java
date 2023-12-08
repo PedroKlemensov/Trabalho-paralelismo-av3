@@ -75,7 +75,6 @@ public class Gerente {
 
         connection.setRequestMethod("GET");
 
-        int responseCode = connection.getResponseCode();
 
         String totalAmount ="" ;
         try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
